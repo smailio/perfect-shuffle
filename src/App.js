@@ -7,7 +7,7 @@ import TextField from 'material-ui/TextField';
 import MaskedInput from 'react-text-mask';
 import Icon from 'material-ui/Icon';
 import IconButton from 'material-ui/IconButton';
-import InputAdornment from 'material-ui/es/Input/InputAdornment';
+import InputAdornment from 'material-ui/Input/InputAdornment';
 import humanizeDuration from 'humanize-duration';
 
 class App extends Component {
