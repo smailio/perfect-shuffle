@@ -4,29 +4,15 @@
     display: inline-block;
     background: transparent;
     color: #000;
-    /*width: 150px;*/
-    /*height: 200px;*/
-    /*margin-right: 20px;*/
-    /*cursor: pointer;*/
 }
 
 .card .face {
-    /*position: absolute;*/
     border: 4px solid #555555;
     color: white;
-    /*width: 150px;*/
-    /*height: 200px;*/
-    /*line-height: 3em;*/
-    /*text-align: center;*/
-    /*text-transform: capitalize;*/
     border-radius: 7px;
-    /*box-shadow: 4px 4px 10px #555;*/
 }
 
 .card .front {
     background: white;
-    /*transform: rotateX(0deg) rotateY(0deg);*/
-    /*transition: all .4s ease-in-out;*/
     backface-visibility: visible;
-    /*z-index: 10;*/
 }
