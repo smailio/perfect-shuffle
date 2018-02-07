@@ -13,8 +13,8 @@ const Card = ({ isSelected, isHidden }) => (
         display: 'grid',
         gridTemplateColumns: '10px auto 10px',
         gridTemplateRows: '10px auto 10px',
-        width: 35,
-        height: 70,
+        width: '4.5vh',
+        height: '9vh',
         borderColor: isSelected ? '#EF4836' : undefined,
         visibility: isHidden ? 'hidden' : 'visible',
         lineHeight: '10px'
