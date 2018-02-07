@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({ isSelected, isHidden }) => (
+const Card = ({ isSelected, isHidden, cardCount }) => (
   <div
     className={isSelected ? 'card' : 'card'}
     style={{
@@ -13,8 +13,8 @@ const Card = ({ isSelected, isHidden }) => (
         display: 'grid',
         gridTemplateColumns: '10px auto 10px',
         gridTemplateRows: '10px auto 10px',
-        width: '4.5vh',
-        height: '9vh',
+        width: cardCount <= 50 ? '7vh' : '4.5vh',
+        height: cardCount <= 50 ? '14vh' : '9vh',
         borderColor: isSelected ? '#EF4836' : undefined,
         visibility: isHidden ? 'hidden' : 'visible',
         lineHeight: '10px'

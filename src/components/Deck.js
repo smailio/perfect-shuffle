@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card';
 import _ from 'lodash';
 
-const Deck = ({ rows, cols, toPick, picked }) => (
+const Deck = ({ rows, cols, toPick, picked, cardCount }) => (
   <div
     className="card-grid"
     style={{
@@ -37,6 +37,7 @@ const Deck = ({ rows, cols, toPick, picked }) => (
               key={r * cols + c}
               isSelected={toPick === r * cols + c}
               isHidden={picked.includes(r * cols + c)}
+              cardCount={cardCount}
             />
           ))}
         </div>

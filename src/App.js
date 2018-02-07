@@ -80,6 +80,7 @@ class App extends Component {
     const numberOfGridsY = this.state.numberOfGridsY;
     const cols = this.state.cols;
     const rows = this.state.rows;
+    const cardCount = this.state.cards.length;
     return (
       <div
         style={{
@@ -96,7 +97,7 @@ class App extends Component {
             cols={this.state.cols}
             interval={this.state.interval}
             totalTime={this.state.cards.length * (110 + this.state.interval)}
-            totalCards={this.state.cards.length}
+            totalCards={cardCount}
             setInterval={newInterval => {
               if (newInterval > 0) this.setState({ interval: newInterval });
             }}
@@ -138,6 +139,7 @@ class App extends Component {
             pickCard={this.pickCard}
             numberOfGrids={numberOfGrids}
             numberOfGridsY={numberOfGridsY}
+            cardCount={cardCount}
           />
         </div>
       </div>

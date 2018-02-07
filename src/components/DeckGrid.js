@@ -9,7 +9,8 @@ const DeckGrid = ({
   numberOfGridsY,
   toPick,
   picked,
-  pickCard
+  pickCard,
+  cardCount
 }) => (
   <div
     style={{
@@ -49,6 +50,7 @@ const DeckGrid = ({
               key={gridNum}
               rows={rows}
               cols={cols}
+              cardCount={cardCount}
               toPick={
                 getGridNumber(rows, cols, toPick) === gridNum
                   ? toPick - gridNum * rows * cols
